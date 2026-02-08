@@ -1,11 +1,16 @@
-import './App.css'
+import "./App.css";
 
 function App() {
+  // @ts-ignore
+  window.electron.logData()
+
   return (
     <>
-       Welcome to Electron.
+      <div style={{fontWeight:500, color:"#fff"}}>
+        Welcome to Electron
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
